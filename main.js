@@ -373,7 +373,7 @@
       
       HTMLActuator.prototype.message = function (won) {
         var type    = won ? "game-won" : "game-over";
-        var message = won ? "¡Ganaste!" : "¡Perdiste!";
+        var message = won ? "あなたは勝利者" : "ゲームオーバーだ！";
       
         if (typeof ga !== "undefined") {
           ga("send", "event", "game", "end", type, this.score);
