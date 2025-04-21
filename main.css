@@ -440,7 +440,7 @@ hr {
   .tile .tile-inner {
     border-radius: 3px;
     background-color: #eee4da;
-    background-image: url(../img/dbz_sprite.png);
+    background-image: url(img/dbz_sprite.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
