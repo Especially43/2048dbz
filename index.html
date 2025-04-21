@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <link rel="manifest" href="/manifest.json" />
+	<meta name="theme-color" content="#151515" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>2048 ドラゴンボール | 2048DBZ</title>
+  <meta name="description" content="2048 ドラゴンボールは、人気アニメ『ドラゴンボール』のキャラクターを集めるパズルゲームです。数字を組み合わせて強力な戦士に進化させよう！無料で今すぐプレイ。">
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="2048 ドラゴンボール"/>
+  <meta property="og:site_name" content="2048DBZ"/>
+  <meta property="og:description" content="2048 ドラゴンボール | 2048 DBZ"/>
+  <meta property="og:image" content="og_image.png"/>
+</head>
+<body>
+  <script>
+    if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/sw.js')
+    .then(registration => {console.log('Service Worker registered successfully:', registration);})
+    .catch(error => {console.log('Error in Service Worker registration:', error);});});}
+    </script>
+  <div class="container">
+    <div class="header">
+      <div class="heading">
+        <h1 class="title">2048 ドラゴンボール</h1>
+        <div class="scores-container">
+          <div class="score-container">0</div>
+          <div class="best-container">0</div>
+        </div>
+      </div>
+      <p class="game-intro">数字をつなげて、<strong>2048 ドラゴンボール</strong></p>
+    </div>
+
+    <div class="game-container">
+      <div id="vegeta-scouter">
+        <img loading="lazy" src="img/scouter.png" >
+        <div id="scouter-deco"><div id="scouter-deco-arrow-left" class="blink">◀</div><div id="scouter-deco-arrow-right" class="blink">▶</div><div id="scouter-deco-arrow-down" class="blink">▼</div><div id="scouter-deco-circle">○</div></div>
+        <div id="scouter-score">0</div>
+      </div>
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="keep-playing-button">続ける</a>
+          <a class="retry-button">再試行</a><br>
+          <div class="sharing">
+            <div class="score-sharing"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">プレーの仕方:</strong> 矢印キーでタイルを動かす。同じ数字の2つのタイルが触れると、1つに合体します！
+    </p>
+    <hr>
+    <div class="block block-728"><script type="text/javascript">
+     atOptions = {
+       'key' : 'd1d26e15f7c349fd8e403bb5ea491a31',
+       'format' : 'iframe',
+       'height' : 90,
+       'width' : 728,
+       'params' : {}
+     };
+   </script>
+   <script type="text/javascript" src="//www.highperformanceformat.com/d1d26e15f7c349fd8e403bb5ea491a31/invoke.js"></script></div>
+       <div class="block block-300"><script type="text/javascript">
+     atOptions = {
+       'key' : '0fee57062f9bb330edc13a4e4349876d',
+       'format' : 'iframe',
+       'height' : 250,
+       'width' : 300,
+       'params' : {}
+     };
+   </script>
+   <script type="text/javascript" src="//www.highperformanceformat.com/0fee57062f9bb330edc13a4e4349876d/invoke.js"></script></div>
+   
+       <hr>
+       <h2>2048 ドラゴンボール：最強の戦士を目指すパズルゲーム</h2>
+       <p>
+         <strong>2048 ドラゴンボール</strong>は、人気アニメ『ドラゴンボール』のキャラクターが登場する中毒性の高いスライド式パズルゲームです。このゲームでは、同じキャラクタータイルをスライドさせて合体させることで、より強力なキャラクターへと進化させていきます。
+       </p>
+     
+       <h2>ゲームの遊び方</h2>
+       <p>
+         画面上の4×4のグリッド内でタイルを上下左右にスライドさせます。同じキャラクターのタイルがぶつかると1つに合体し、次の形態に進化します。例えば、孫悟空がスーパーサイヤ人へ、さらにはゴッドやブルーへと進化する過程を見ることができます。
+       </p>
+     
+       <h2>特徴</h2>
+       <ul>
+         <li>ドラゴンボールファンにはたまらないキャラクター進化システム</li>
+         <li>美麗なグラフィックと直感的な操作性</li>
+         <li>完全無料でプレイ可能、インストール不要のブラウザゲーム</li>
+         <li>スコアに応じてランクが上がり、やり込み要素も充実</li>
+       </ul>
+     
+       <h2>誰におすすめ？</h2>
+       <p>
+         このゲームは、<em>ドラゴンボールが好きな方</em>はもちろん、数字系パズルが好きな人、2048系のゲームにハマっている人にもおすすめです。シンプルながらも奥深いゲーム性で、何度でもプレイしたくなる魅力があります。
+       </p>
+     
+       <h2>まとめ</h2>
+       <p>
+         「2048 ドラゴンボール」は、懐かしのキャラを集めながら、頭を使って遊べる最高の暇つぶしゲームです。スマートフォンやPCからいつでもアクセス可能なので、通勤中や休憩時間にもぴったり。今すぐ挑戦して、最強の戦士「ウルトラ悟空」を目指しましょう！
+       </p>
+     </section>
+       <hr>
+       <p>
+        この「2048 DBZ」バージョンは、<a target="_blank" href="https://kaloodinaz.github.io/">Kaloo Dinaz</a>によって制作された高速版であり、
+        「非公式の」<a target="_blank" href="https://kaloodinaz.github.io/2048-online/">2048ゲーム</a>を元に
+        <a target="_blank" href="https://github.com/kaloodinaz/">Kaloo Dinaz</a>がクローンとして作成しました。
+      </p>
+      
+ 
+  </div>
+
+
+  <script defer src="main.js"></script>
+
+</body>
+</html>
